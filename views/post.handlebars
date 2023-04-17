@@ -1,0 +1,35 @@
+<div class="text-center">
+    <h2>{{title}}</h2>
+    <p>{{description}}</p>
+    <p>Created by {{user.name}} on {{format_date date_created}}</p>
+    <p>
+        <button class="btn btn-primary">Post</button>
+    </p>
+</div>
+
+<form class="form new-comment-form" blog-id="{{id}}">
+    <div class="form-group">
+        <label for="post-title" comment-id="{{id}}">Comment:</label>
+        <input class="form-input" type="text" id="comment-body" name="comment-body" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Post</button>
+    </div>
+</form>
+<div class="col-md-6 comment-list">
+    <h1>Comments</h1>
+
+    {{#if comments.length}}
+    {{#each comments as |comment| }}
+    <div class="row mb-2">
+        <div class="card">
+            <p>{{comment.body}}</p>
+            <p>Commented on {{user.name}} {{format_date date_created}}</p>
+        </div>
+    </div>
+    {{/each}}
+    {{/if}}
+</div>
+</div>
+
+<script src="../js/blog.js"></script>
