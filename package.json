@@ -1,0 +1,25 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "mvc tech blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndufour48/tech-blog.git"
+  },
+  "author": "ndufour48",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndufour48/tech-blog/issues"
+  },
+  "homepage": "https://github.com/ndufour48/tech-blog#readme"
+}
